@@ -4,6 +4,7 @@ int main()
 {
 	float p_compra, p_final;
 	int n_camisas;
+	cout << "Bienvenido al programa, para calcular el precio final" << endl;
 	cout << "Ingrese el precio de la compra: ";
 	cin >> p_compra;
 	cout << "Ingrese el numero de camisas: ";
