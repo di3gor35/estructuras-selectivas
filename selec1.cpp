@@ -46,6 +46,6 @@ int main(){
 			} while (r == false);
 
 		}
-	} while (res == true);
+	} while (res == 1);
 	return 0;
 }
