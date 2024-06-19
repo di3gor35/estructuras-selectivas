@@ -47,5 +47,6 @@ int main(){
 
 		}
 	} while (res == 1);
+	cout << "Gracias por usar el programa";
 	return 0;
 }
