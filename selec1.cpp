@@ -14,7 +14,7 @@ bool Validar_Respuesta(int r){
 		return true;
 	}
 	else {
-		cout << "Opcion no valida" << endl;
+		cout << "Opcion no válida." << endl;
 		return false;
 	}
 }
@@ -24,16 +24,16 @@ int main(){
 	int n_camisas;
 	int res;
 	bool r;
-	cout << "Bienvenido al programa, para calcular el precio final de una compra" << endl;
+	cout << "Bienvenido al programa, para calcular el precio final de una compra." << endl;
 	do {
 		cout << "Ingrese el precio de la compra: ";
 		cin >> p_compra;
-		cout << "Ingrese el numero de camisas: ";
+		cout << "Ingrese el número de camisas: ";
 		cin >> n_camisas;
 		if (p_compra <= 0 || n_camisas <= 0){
-			cout << "Error, las cantidades deben ser mayores a cero" << endl;
+			cout << "Error, las cantidades deben ser mayores a cero." << endl;
 			do {
-			cout << "Desea intentar de nuevo? (1: si/ 0: no): ", cin >> res;
+			cout << "¿Desea intentar de nuevo? (1: si/ 0: no): ", cin >> res;
 			r = Validar_Respuesta(res);
 			} while (r == false);
 
@@ -41,12 +41,12 @@ int main(){
 			p_final = Calcular_PrecioFinal(p_compra, n_camisas);
 			cout << "El precio final es: " << p_final << endl;
 			do {
-			cout << "Desea hacer otra consulta? (1: si/ 0: no): ", cin >> res;
+			cout << "¿Desea hacer otra consulta? (1: si/ 0: no): ", cin >> res;
 			r = Validar_Respuesta(res);
 			} while (r == false);
 
 		}
 	} while (res == 1);
-	cout << "Gracias por usar el programa";
+	cout << "Gracias por usar el programa.";
 	return 0;
 }
